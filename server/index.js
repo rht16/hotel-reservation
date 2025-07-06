@@ -9,9 +9,8 @@ const PORT = 4001;
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:3000', // ✅ Exact frontend origin
+    origin: '*', // 👈 Allow all origins
     methods: ['GET', 'POST'],
-    credentials: true,
   }));
 app.use(express.json());
 
